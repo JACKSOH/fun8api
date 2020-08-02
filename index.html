@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fun8 API test</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Fun8 API test</h1>
+</div>
+  
+<div class="container ">
+  <div class="row-5 col-3 ">
+    <div class=" col-sm-4 p-3">
+      <h3> "Get All Image"</h3>
+      <p>Click here to receive all the image from fun8</p>
+      <form action="https://fun8play.000webhostapp.com/usesql/all.php">
+      <button type="submit" class="btn btn-secondary" onclick="" >Go</button>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <h3>Get Image by Page</h3>
+      <p>Please enter a page</p>
+      <form action="https://fun8play.000webhostapp.com/usesql/bypage.php" method="GET">
+      <input type="number" id="page" name="page" min="1">
+      <button type="submit" class="btn btn-secondary">Go</button>
+    </form>
+    </div>
+    <div class="col-sm-4">
+      <h3>Get Image by ID</h3>        
+      <p>Please enter an ID</p>
+      <form action="https://fun8play.000webhostapp.com/usesql/byid.php" method="GET">
+      <input type="number" id="id" name="id" min="1">
+      <button type="submit" class="btn btn-secondary">Go</button>
+    </form>
+    </div>
+    <div class="col-sm-4">
+        <h3>Get the most popular image/s</h3>        
+        <p>This will return you the most popular image/s</p>
+        <form action="https://fun8play.000webhostapp.com/usesql/popular.php">
+        <button type="submit" class="btn btn-secondary">Go</button>
+        </form>
+      </div>
+      <div class="col-sm-4">
+        <h3>Reload all the data </h3>        
+        <p>Reload all the image data in database</p>
+        <form action="https://fun8play.000webhostapp.com/usesql/reloadall.php" onsubmit="return confirm('This will reset all the data \nAre you sure?');">
+        <button type="submit" class="btn btn-secondary">Go</button> 
+        <p class="text-danger">Warning: This will reset all the exisitng data !</p>
+    </form>
+      </div>
+      <div class="col-sm-4">
+        <h3>Create new image  </h3>        
+        <p>This will direct you to new image creation page</p>
+        <form action="https://fun8play.000webhostapp.com/usesql/createpage.html">
+        <button type="submit" class="btn btn-secondary">Go </button>
+         </form>
+
+      </div>
+
+  </div>
+</div>
+
+</body>
+</html>
