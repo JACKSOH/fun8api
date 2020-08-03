@@ -4,7 +4,7 @@ All of these function will print and return json object
 
 https://fun8play.000webhostapp.com/usesql/create.php
 -use POST to get the data
--Testing page :https://fun8play.000webhostapp.com/usesql/createpage.html
+-testing page :https://fun8play.000webhostapp.com/usesql/createpage.html
 
 https://fun8play.000webhostapp.com/usesql/all.php
 -retrieve all the data
